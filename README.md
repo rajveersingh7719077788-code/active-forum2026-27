@@ -1,2 +1,3828 @@
-# active-forum2026-27
-The Charles Babbage Active Forum at Yeshwant Mahavidyalaya, Nanded, is a student-focused forum organizing academic and technical activities that contribute to holistic development.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yeshwant Mahavidyalaya|ACTIVE FORUM 2026 – 27</title>
+
+  <!-- Elegant Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+     /* =========================
+   COLLEGE NAME ABOVE TITLE
+========================= */
+
+./* =========================
+   COLLEGE NAME ABOVE TITLE
+========================= */
+
+.hero-college {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-college-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter:
+        drop-shadow(0 0 12px rgba(214,173,69,0.18));
+}
+
+.hero-college-name {
+    font-family: Cinzel, serif;
+    color: #f5f2ea;
+    font-size: clamp(1.15rem, 2vw, 1.8rem);
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+}
+
+.hero-college-name div:last-child {
+    color: #ffe08a;
+}
+
+    /* =========================
+       BASIC SETTINGS
+    ========================= */
+
+    :root {
+      --black: #050505;
+      --black2: #0b0b0d;
+
+      --red: #e21d2e;
+      --red-bright: #ff3042;
+
+      --gold: #d6ad45;
+      --gold-bright: #ffe08a;
+
+      --white: #f5f2ea;
+      --gray: #aaa7a0;
+
+      --line: rgba(214,173,69,0.28);
+
+      --shadow: 0 22px 70px rgba(0,0,0,0.55);
+
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+
+      min-height: 100vh;
+
+      color: var(--white);
+
+      font-family: Inter, Arial, sans-serif;
+
+      background:
+
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(226,29,46,0.13),
+          transparent 25%
+        ),
+
+        radial-gradient(
+          circle at 85% 10%,
+          rgba(214,173,69,0.11),
+          transparent 22%
+        ),
+
+        linear-gradient(
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        ),
+
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        ),
+
+        #050505;
+
+      background-size:
+        auto,
+        auto,
+        42px 42px,
+        42px 42px,
+        auto;
+
+      overflow-x: hidden;
+    }
+
+
+    /* =========================
+       TECHNOLOGY BACKGROUND
+    ========================= */
+
+    body::before {
+
+      content: "";
+
+      position: fixed;
+
+      inset: 0;
+
+      pointer-events: none;
+
+      z-index: -1;
+
+      background:
+
+        linear-gradient(
+          115deg,
+          transparent 0 48%,
+          rgba(226,29,46,0.05) 49%,
+          transparent 50%
+        ),
+
+        linear-gradient(
+          295deg,
+          transparent 0 58%,
+          rgba(214,173,69,0.04) 59%,
+          transparent 60%
+        );
+
+      background-size:
+        320px 320px,
+        420px 420px;
+
+      animation: drift 18s linear infinite;
+    }
+
+    @keyframes drift {
+
+      to {
+        background-position:
+          320px 160px,
+          -420px 240px;
+      }
+
+    }
+
+
+    .container {
+
+      width: min(
+        1180px,
+        calc(100% - 36px)
+      );
+
+      margin: auto;
+    }
+
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    .nav {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 100;
+
+      backdrop-filter: blur(16px);
+
+      background: rgba(3,3,3,0.78);
+
+      border-bottom:
+        1px solid rgba(214,173,69,0.2);
+    }
+
+    .nav-inner {
+
+      height: 70px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+    }
+
+    .brand-mini {
+
+      font-family: Cinzel, serif;
+
+      font-weight: 700;
+
+      letter-spacing: 0.08em;
+
+      color: var(--gold-bright);
+    }
+
+    .nav-links {
+
+      display: flex;
+
+      gap: 22px;
+
+      list-style: none;
+    }
+
+    .nav-links a {
+
+      color: #ddd;
+
+      text-decoration: none;
+
+      font-size: 0.85rem;
+
+      font-weight: 600;
+
+      transition: 0.25s;
+    }
+
+    .nav-links a:hover {
+
+      color: var(--gold-bright);
+    }
+
+
+    /* =========================
+       HERO SECTION
+    ========================= */
+
+    .hero {
+
+      min-height: 760px;
+
+      display: flex;
+
+      align-items: center;
+    }
+
+    .hero-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1.3fr 0.7fr;
+
+      gap: 55px;
+
+      align-items: center;
+
+      padding: 80px 0 95px;
+    }
+
+    .eyebrow {
+
+      display: inline-flex;
+
+      gap: 9px;
+
+      align-items: center;
+
+      padding: 8px 13px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 999px;
+
+      color: var(--gold-bright);
+
+      background:
+        rgba(214,173,69,0.06);
+
+      text-transform: uppercase;
+
+      letter-spacing: 0.17em;
+
+      font-size: 0.72rem;
+
+      font-weight: 700;
+    }
+
+    .eyebrow::before {
+
+      content: "";
+
+      width: 7px;
+
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--red-bright);
+
+      box-shadow:
+        0 0 15px var(--red-bright);
+    }
+
+
+    .hero h1 {
+
+      margin-top: 24px;
+
+      font-family: Cinzel, serif;
+
+      font-size:
+        clamp(2.8rem,7vw,6.2rem);
+
+      line-height: 0.98;
+
+      font-weight: 800;
+
+      letter-spacing: 0.025em;
+    }
+
+    .hero h1 span {
+
+      display: block;
+
+      color: var(--red-bright);
+
+      text-shadow:
+        0 0 32px rgba(226,29,46,0.28);
+    }
+
+
+    .college {
+
+      margin-top: 24px;
+
+      max-width: 780px;
+
+      font-family: Cinzel, serif;
+
+      font-size:
+        clamp(1rem,2vw,1.35rem);
+
+      line-height: 1.55;
+
+      color: #eee7d8;
+
+      font-weight: 700;
+    }
+
+    .college small {
+
+      display: block;
+
+      margin-top: 7px;
+
+      color: var(--gold);
+
+      font:
+        600 0.8rem Inter, sans-serif;
+
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+    }
+
+
+    .hero-copy {
+
+      margin-top: 24px;
+
+      max-width: 700px;
+
+      color: var(--gray);
+
+      line-height: 1.8;
+
+      font-size: 1rem;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .hero-actions {
+
+      display: flex;
+
+      gap: 14px;
+
+      flex-wrap: wrap;
+
+      margin-top: 32px;
+    }
+
+    .btn {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 13px 20px;
+
+      border-radius: 12px;
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+      font-size: 0.9rem;
+
+      transition: 0.25s;
+
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+
+      color: #120b03;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--gold-bright),
+          var(--gold)
+        );
+
+      box-shadow:
+        0 12px 35px
+        rgba(214,173,69,0.17);
+    }
+
+    .btn-primary:hover {
+
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 16px 40px
+        rgba(214,173,69,0.28);
+    }
+
+    .btn-ghost {
+
+      color: #eee;
+
+      border-color:
+        rgba(255,255,255,0.15);
+
+      background:
+        rgba(255,255,255,0.04);
+    }
+
+    .btn-ghost:hover {
+
+      border-color: var(--red);
+
+      color: white;
+    }
+
+
+    /* =========================
+       HERO DIGITAL EMBLEM
+    ========================= */
+
+    .hero-emblem {
+
+      position: relative;
+
+      width: min(390px,100%);
+
+      aspect-ratio: 1;
+
+      margin: auto;
+
+      display: grid;
+
+      place-items: center;
+    }
+
+    .orb {
+
+      position: absolute;
+
+      inset: 10%;
+
+      border:
+        1px solid
+        rgba(214,173,69,0.32);
+
+      border-radius: 50%;
+
+      box-shadow:
+        inset 0 0 70px
+        rgba(226,29,46,0.08),
+
+        0 0 70px
+        rgba(214,173,69,0.06);
+    }
+
+    .orb::before,
+    .orb::after {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 12%;
+
+      border:
+        1px dashed
+        rgba(226,29,46,0.35);
+
+      border-radius: 50%;
+
+      animation:
+        spin 16s linear infinite;
+    }
+
+    .orb::after {
+
+      inset: 25%;
+
+      border-color:
+        rgba(214,173,69,0.3);
+
+      animation-duration: 11s;
+
+      animation-direction: reverse;
+    }
+
+    @keyframes spin {
+
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+
+    .emblem-center {
+
+      position: relative;
+
+      width: 47%;
+
+      aspect-ratio: 1;
+
+      border-radius: 28%;
+
+      transform: rotate(45deg);
+
+      border:
+        1px solid
+        rgba(214,173,69,0.55);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(226,29,46,0.2),
+          rgba(214,173,69,0.08)
+        );
+
+      display: grid;
+
+      place-items: center;
+
+      box-shadow:
+        0 0 50px
+        rgba(226,29,46,0.1);
+    }
+
+    .emblem-center div {
+
+      transform: rotate(-45deg);
+
+      text-align: center;
+
+      font-family: Cinzel, serif;
+
+      font-weight: 800;
+    }
+
+    .emblem-center b {
+
+      display: block;
+
+      font-size: 2.1rem;
+
+      color: var(--gold-bright);
+    }
+    .emblem-center img {
+    mix-blend-mode: screen;
+    }
+
+    .emblem-center small {
+
+      color: #ddd;
+
+      font-family: Inter, sans-serif;
+
+      letter-spacing: 0.18em;
+    }
+    
+  
+
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    .section {
+
+      padding: 92px 0;
+
+      position: relative;
+    }
+
+    .section-head {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: end;
+
+      gap: 25px;
+
+      margin-bottom: 34px;
+    }
+
+    .section-kicker {
+
+      color: var(--red-bright);
+
+      text-transform: uppercase;
+
+      font-weight: 800;
+
+      letter-spacing: 0.18em;
+
+      font-size: 0.7rem;
+    }
+
+    .section h2 {
+
+      margin-top: 7px;
+
+      font-family: Cinzel, serif;
+
+      font-size:
+        clamp(1.8rem,4vw,3rem);
+    }
+
+    .section-intro {
+
+      max-width: 610px;
+
+      color: var(--gray);
+
+      line-height: 1.7;
+    }
+
+
+    /* =========================
+       IMAGE GALLERY
+    ========================= */
+
+    .gallery {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 20px;
+    }
+
+    .card {
+
+      overflow: hidden;
+
+      border:
+        1px solid
+        rgba(214,173,69,0.2);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(22,22,24,0.9),
+          rgba(7,7,8,0.95)
+        );
+
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow);
+
+      transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+    }
+
+    .card:hover {
+
+      transform: translateY(-6px);
+
+      border-color:
+        rgba(226,29,46,0.6);
+    }
+
+
+    .card-img {
+
+      aspect-ratio: 16/10;
+
+      overflow: hidden;
+
+      position: relative;
+
+      background: #101010;
+    }
+
+    .card-img img {
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
+
+      transition:
+        transform 0.6s ease;
+    }
+
+    .card:hover img {
+
+      transform: scale(1.045);
+    }
+
+    .card-img::after {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background:
+        linear-gradient(
+          180deg,
+          transparent 45%,
+          rgba(0,0,0,0.68)
+        );
+    }
+
+
+    .card-label {
+
+      position: absolute;
+
+      z-index: 2;
+
+      left: 13px;
+
+      bottom: 12px;
+
+      padding: 6px 9px;
+
+      border:
+        1px solid
+        rgba(255,255,255,0.18);
+
+      background:
+        rgba(0,0,0,0.55);
+
+      backdrop-filter: blur(8px);
+
+      border-radius: 7px;
+
+      color: var(--gold-bright);
+
+      font-size: 0.68rem;
+
+      font-weight: 800;
+
+      letter-spacing: 0.08em;
+
+      text-transform: uppercase;
+    }
+
+
+    .card-body {
+
+      padding: 20px;
+    }
+
+    .card h3 {
+
+      font-family: Cinzel, serif;
+
+      font-size: 1.12rem;
+
+      margin-bottom: 8px;
+
+      color: white;
+    }
+
+    .card p {
+
+      color: var(--gray);
+
+      font-size: 0.88rem;
+
+      line-height: 1.65;
+    }
+
+
+    /* =========================
+       FEATURE BOXES
+    ========================= */
+
+    .feature {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 12px;
+
+      margin-top: 25px;
+    }
+
+    .feature-item {
+
+      padding: 18px;
+
+      border:
+        1px solid
+        rgba(255,255,255,0.09);
+
+      background:
+        rgba(255,255,255,0.025);
+
+      border-radius: 15px;
+    }
+
+    .feature-item strong {
+
+      display: block;
+
+      color: var(--gold-bright);
+
+      font-family: Cinzel, serif;
+
+      font-size: 1.05rem;
+
+      margin-bottom: 6px;
+    }
+
+    .feature-item span {
+
+      color: var(--gray);
+
+      font-size: 0.8rem;
+
+      line-height: 1.5;
+    }
+
+
+    /* =========================
+       VIDEO SECTION
+    ========================= */
+
+    .video-wrap {
+
+      border:
+        1px solid
+        rgba(214,173,69,0.25);
+
+      border-radius: 26px;
+
+      padding: 10px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(226,29,46,0.08),
+          rgba(214,173,69,0.04)
+        );
+
+      box-shadow: var(--shadow);
+    }
+
+
+    .video-placeholder {
+
+      min-height: 520px;
+
+      border-radius: 19px;
+
+      display: grid;
+
+      place-items: center;
+
+      text-align: center;
+
+      padding: 50px;
+
+      background:
+
+        radial-gradient(
+          circle at center,
+          rgba(226,29,46,0.1),
+          transparent 35%
+        ),
+
+        linear-gradient(
+          120deg,
+          #080808,
+          #151515
+        );
+
+      border:
+        1px dashed
+        rgba(214,173,69,0.38);
+    }
+
+
+    .play {
+
+      width: 76px;
+
+      height: 76px;
+
+      border-radius: 50%;
+
+      display: grid;
+
+      place-items: center;
+
+      margin: 0 auto 20px;
+
+      border:
+        1px solid
+        var(--gold);
+
+      color: var(--gold-bright);
+
+      font-size: 1.5rem;
+
+      box-shadow:
+        0 0 35px
+        rgba(214,173,69,0.12);
+    }
+
+    .video-placeholder h3 {
+
+      font-family: Cinzel, serif;
+
+      font-size: 1.5rem;
+
+      margin-bottom: 10px;
+    }
+
+    .video-placeholder p {
+
+      color: var(--gray);
+
+      max-width: 550px;
+
+      line-height: 1.7;
+    }
+
+
+    .video-code {
+
+      display: inline-block;
+
+      margin-top: 15px;
+
+      padding: 9px 12px;
+
+      border-radius: 8px;
+
+      background: #050505;
+
+      border:
+        1px solid
+        rgba(255,255,255,0.1);
+
+      color: #d5d5d5;
+
+      font:
+        500 0.78rem
+        ui-monospace,
+        SFMono-Regular,
+        Consolas,
+        monospace;
+    }
+
+
+    /* =========================
+       THEME / ABOUT
+    ========================= */
+
+    .split {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 22px;
+    }
+
+    .panel {
+
+      padding: 30px;
+
+      border:
+        1px solid
+        rgba(214,173,69,0.2);
+
+      border-radius: 22px;
+
+      background:
+        rgba(10,10,11,0.78);
+
+      box-shadow: var(--shadow);
+    }
+
+    .panel h3 {
+
+      font-family: Cinzel, serif;
+
+      color: var(--gold-bright);
+
+      margin-bottom: 14px;
+
+      font-size: 1.35rem;
+    }
+
+    .panel p {
+
+      color: var(--gray);
+
+      line-height: 1.8;
+    }
+
+
+    .tech-list {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 10px;
+
+      margin-top: 18px;
+
+      list-style: none;
+    }
+
+    .tech-list li {
+
+      padding: 12px 14px;
+
+      border-left:
+        2px solid
+        var(--red);
+
+      background:
+        rgba(255,255,255,0.025);
+
+      color: #ddd;
+
+      border-radius:
+        0 8px 8px 0;
+    }
+
+    /* ==========================================
+   BOTH SECTIONS SIDE BY SIDE
+========================================== */
+
+.management-area {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 80px 30px 120px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: 1.25fr 0.9fr;
+
+    gap: 55px;
+
+    align-items: start;
+}
+    /* =========================
+   SOURCE OF INSPIRATION
+========================= */
+
+.inspiration-section {
+    padding: 35px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.inspiration-card {
+    width: min(650px, 90%);
+    min-height: 145px;
+
+    padding: 25px 35px;
+
+    background: rgba(18, 18, 18, 0.92);
+
+    border: 1px solid rgba(214, 173, 69, 0.45);
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+.inspiration-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(214, 173, 69, 0.85);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Red heading */
+
+.inspiration-label {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 4px 18px;
+
+    background: #090909;
+
+    color: #ff2638;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+
+    white-space: nowrap;
+}
+
+/* Number */
+
+.inspiration-number {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid #b88928;
+
+    background: rgba(62, 22, 27, 0.75);
+
+    color: #f4cf67;
+
+    font-family: Cinzel, serif;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+/* Principal information */
+
+.inspiration-info {
+    text-align: left;
+}
+
+.inspiration-info h3 {
+    margin: 0 0 8px;
+
+    color: #f5f2ea;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.inspiration-info span {
+    color: #ff2638;
+
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+   /* =========================
+   FACULTY MEMBERS
+========================= */
+
+.faculty-section {
+    padding: 90px 0 70px;
+}
+
+.management-container {
+    width: 100%;
+}
+
+.faculty-heading {
+    text-align: center !important;
+    margin-bottom: 45px;
+    width: 100%;
+    display: block;
+}
+.faculty-heading .section-label {
+    color: #ff2638;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    margin-bottom: 8px;
+}
+
+.faculty-heading h2 {
+    margin: 0;
+    color: #f5f2ea;
+    font-family: Cinzel, serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    letter-spacing: 0.03em;
+}
+
+.faculty-heading p {
+    margin: 10px auto 0;
+    color: #999;
+    font-size: 0.95rem;
+}
+
+/* Faculty cards */
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.faculty-card {
+    min-height: 145px;
+    padding: 25px 20px;
+    background: rgba(18, 18, 18, 0.92);
+    border: 1px solid rgba(214, 173, 69, 0.38);
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    transition: 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(214, 173, 69, 0.8);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+/* Number circle */
+
+.faculty-number {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid #b88928;
+
+    background: rgba(62, 22, 27, 0.75);
+
+    color: #f4cf67;
+    font-family: Cinzel, serif;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* Faculty information */
+
+.faculty-info h3 {
+    margin: 0 0 7px;
+
+    color: #f5f2ea;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.faculty-info span {
+    color: #ff2638;
+
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faculty-section {
+        padding: 60px 0 45px;
+    }
+
+}
+
+/* ==========================================
+   PROGRAM TEAM
+========================================== */
+
+.program-team {
+    width: 100%;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.team-title {
+    margin-bottom: 12px;
+}
+
+.team-title span {
+    color: #ff304f;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.team-title h1 {
+    margin: 5px 0 0;
+
+    color: #f5f1e8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 44px;
+
+    line-height: 1;
+}
+
+.team-description {
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 35px;
+}
+/* CENTER PROGRAM TEAM */
+.program-team {
+    width: 100%;
+    text-align: center;
+}
+
+.team-title {
+    text-align: center;
+}
+
+.team-description {
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    justify-content: center;
+}
+
+/* ==========================================
+   TEAM CARDS
+
+   01 02 03 04
+       05 06
+========================================== */
+
+.team-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+    align-items: start;
+}
+
+
+/* Every card same size */
+
+.team-card {
+    width: 100%;
+
+    height: 170px;
+
+    min-height: 170px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: #101010;
+
+    border: 1px solid rgba(184, 137, 45, 0.35);
+
+    border-radius: 16px;
+}
+
+
+/* 05 goes below 02 */
+
+.team-card:nth-child(5) {
+    grid-column: 2;
+}
+
+
+/* 06 goes below 03 */
+
+.team-card:nth-child(6) {
+    grid-column: 3;
+}
+
+
+/* Number */
+
+.team-number {
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #24170f,
+        #321414
+    );
+
+    border: 1px solid #8c6725;
+
+    color: #e8c765;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.team-card h3 {
+    margin: 0 0 5px;
+
+    color: #f2eee6;
+
+    font-size: 14px;
+}
+
+.team-card p {
+    margin: 0;
+
+    color: #ff304f;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================
+   MEMBER LIST
+========================================== */
+
+.members-section {
+    width: 100%;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.members-label {
+    display: block;
+
+    color: #ff304f;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+.members-section h2 {
+    margin: 0 0 15px;
+
+    color: #f5f1e8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    line-height: 1;
+}
+
+.members-description {
+    color: #888;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin: 0 auto 30px;
+
+    max-width: 400px;
+}
+
+
+/* List */
+
+.members-list {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* Individual member */
+
+.member {
+    width: 100%;
+
+    min-height: 65px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    padding: 9px 15px;
+
+    background: #101010;
+
+    border: 1px solid rgba(184, 137, 45, 0.35);
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+
+/* Member number */
+
+.member > span {
+    width: 43px;
+
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 15px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #24170f,
+        #321414
+    );
+
+    border: 1px solid #8c6725;
+
+    color: #e8c765;
+
+    font-family: Georgia, serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.member h3 {
+    margin: 0 0 3px;
+
+    color: #f2eee6;
+
+    font-size: 14px;
+}
+
+.member p {
+    margin: 0;
+
+    color: #ff304f;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.3px;
+}
+
+
+/* Hover */
+
+.team-card:hover,
+.member:hover {
+    border-color: #b98a2d;
+
+    background: #141414;
+
+    transform: translateY(-2px);
+
+    transition: 0.3s ease;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .management-area {
+        grid-template-columns: 1fr;
+
+        max-width: 750px;
+
+        gap: 80px;
+    }
+
+    .members-section {
+        max-width: 650px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .management-area {
+        padding: 60px 18px 80px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* On mobile, 05 and 06 are centered */
+
+    .team-card:nth-child(5) {
+        grid-column: 1;
+    }
+
+    .team-card:nth-child(6) {
+        grid-column: 2;
+    }
+
+    .team-title h1 {
+        font-size: 36px;
+    }
+
+    .members-section h2 {
+        font-size: 34px;
+    }
+
+}
+
+  
+  
+      /* ==============================
+   MEMBERS SECTION
+   ============================== */
+
+.members-section {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 80px 30px 100px;
+    text-align: center;
+}
+
+.members-section .section-label {
+    color: #ff304f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.members-section h2 {
+    margin: 0;
+    color: #f5f1e8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.members-intro {
+    color: #888;
+    font-size: 14px;
+    margin: 15px auto 40px;
+}
+
+/* List container */
+
+.members-list {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Individual member */
+
+.member-row {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    background: #101010;
+
+    border: 1px solid rgba(184, 137, 45, 0.35);
+    border-radius: 12px;
+
+    padding: 12px 25px;
+
+    transition: all 0.3s ease;
+}
+
+/* Gold number circle */
+
+.member-number {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #24170f,
+        #321414
+    );
+
+    border: 1px solid #8c6725;
+
+    color: #e8c765;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-right: 22px;
+}
+
+/* Name */
+
+.member-info h3 {
+    margin: 0 0 5px;
+
+    color: #f2eee6;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Position */
+
+.member-info p {
+    margin: 0;
+
+    color: #ff304f;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+/* Hover effect */
+
+.member-row:hover {
+    border-color: #9c742b;
+
+    background: #141414;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.35),
+        0 0 15px rgba(184, 137, 45, 0.08);
+}
+
+.member-row:hover .member-number {
+    background: linear-gradient(
+        135deg,
+        #3a2010,
+        #421515
+    );
+
+    border-color: #c99b3b;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    .members-section {
+        padding: 60px 18px 80px;
+    }
+
+    .members-section h2 {
+        font-size: 32px;
+    }
+
+    .members-list {
+        gap: 10px;
+    }
+
+    .member-row {
+        padding: 12px 16px;
+    }
+
+    .member-number {
+        width: 42px;
+        height: 42px;
+
+        font-size: 14px;
+
+        margin-right: 15px;
+    }
+
+    .member-info h3 {
+        font-size: 14px;
+    }
+
+    .member-info p {
+        font-size: 9px;
+    }
+}
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+      padding:
+        50px 0 105px;
+
+      border-top:
+        1px solid
+        rgba(214,173,69,0.16);
+
+      text-align: center;
+    }
+
+    .footer-title {
+
+      font-family: Cinzel, serif;
+
+      color: var(--gold-bright);
+
+      font-size: 1.2rem;
+    }
+
+    footer p {
+
+      margin-top: 9px;
+
+      color: #777;
+
+      font-size: 0.8rem;
+    }
+
+
+    /* =========================
+       DIGITAL CLOCK
+    ========================= */
+
+    .clock {
+
+      position: fixed;
+
+      left: 16px;
+
+      bottom: 16px;
+
+      z-index: 150;
+
+      min-width: 155px;
+
+      padding: 11px 13px;
+
+      border:
+        1px solid
+        rgba(214,173,69,0.5);
+
+      border-radius: 12px;
+
+      background:
+        rgba(4,4,5,0.88);
+
+      backdrop-filter: blur(14px);
+
+      box-shadow:
+        0 12px 35px
+        rgba(0,0,0,0.5);
+    }
+
+    .clock .time {
+
+      color: var(--gold-bright);
+
+      font:
+        800 1rem
+        ui-monospace,
+        SFMono-Regular,
+        Consolas,
+        monospace;
+
+      letter-spacing: 0.04em;
+    }
+
+    .clock .date {
+
+      margin-top: 3px;
+
+      color: #aaa;
+
+      font-size: 0.68rem;
+
+      letter-spacing: 0.08em;
+
+      text-transform: uppercase;
+    }
+
+    .clock .zone {
+
+      margin-top: 3px;
+
+      color: var(--red-bright);
+
+      font-size: 0.6rem;
+
+      font-weight: 700;
+
+      letter-spacing: 0.08em;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width:950px) {
+
+      .hero-grid {
+
+        grid-template-columns: 1fr;
+
+        padding-top: 60px;
+      }
+
+      .hero-emblem {
+
+        max-width: 320px;
+      }
+
+      .gallery {
+
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .team {
+
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .feature {
+
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+    }
+
+
+    @media(max-width:680px) {
+
+      .container {
+
+        width:
+          min(
+            calc(100% - 24px),
+            1180px
+          );
+      }
+
+      .nav-links {
+
+        display: none;
+      }
+
+      .hero {
+
+        min-height: auto;
+      }
+
+      .hero-grid {
+
+        gap: 30px;
+
+        padding:
+          55px 0 70px;
+      }
+
+      .hero h1 {
+
+        font-size:
+          clamp(
+            2.45rem,
+            15vw,
+            4rem
+          );
+      }
+
+      .gallery,
+      .split {
+
+        grid-template-columns: 1fr;
+      }
+
+      .team {
+
+        grid-template-columns:
+          1fr 1fr;
+      }
+
+      .feature {
+
+        grid-template-columns:
+          1fr 1fr;
+      }
+
+      .video-placeholder {
+
+        min-height: 380px;
+
+        padding: 28px;
+      }
+
+      .section {
+
+        padding: 68px 0;
+      }
+
+      .section-head {
+
+        display: block;
+      }
+
+      .section-intro {
+
+        margin-top: 12px;
+      }
+
+      .clock {
+
+        left: 10px;
+
+        bottom: 10px;
+
+        min-width: 145px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="nav">
+
+  <div class="container nav-inner">
+
+    <div class="brand-mini">
+      YESHWANT Mahavidyalaya
+    </div>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="#program">Program</a>
+      </li>
+
+      <li>
+        <a href="#video">Video</a>
+      </li>
+
+      <li>
+        <a href="#theme">Theme</a>
+      </li>
+
+      <li>
+        <a href="#team">Management</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <!-- LEFT SIDE -->
+        <div>
+
+            <div class="eyebrow">
+                Academic Year 2026–27
+            </div>
+
+            <!-- COLLEGE NAME -->
+            <div class="hero-college">
+
+                <img
+                    src="YESHWANT LOGO.jpeg"
+                    alt="Yeshwant Mahavidyalaya Logo"
+                    class="hero-college-logo"
+                >
+
+                <div class="hero-college-name">
+                    <div>
+                        
+                    </div>
+
+                    <div>
+                        YESHWANT MAHAVIDYALAYA, NANDED
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TITLE -->
+            <h1>
+
+                ACTIVE FORUM
+
+                <span>
+                    2026-27
+                </span>
+
+            </h1>
+
+            <!-- COLLEGE DETAILS -->
+            <div class="college">
+
+                
+                Yeshwant Mahavidyalaya, Nanded
+
+                <small>
+                    Department of Computer Science &amp; IT
+                    • Active Forum
+                </small>
+
+            </div>
+
+            <!-- DESCRIPTION -->
+            <p class="hero-copy">
+
+                A next-generation student platform built around
+                technology, innovation, communication, creativity
+                and leadership — carrying forward the spirit of
+                the successful YMIT FEST tradition.
+
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="hero-actions">
+
+                <a
+                    class="btn btn-primary"
+                    href="#program"
+                >
+                    Explore Program
+                </a>
+
+                <a
+                    class="btn btn-ghost"
+                    href="#video"
+                >
+                    Watch Highlights
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div
+            class="hero-emblem"
+            aria-hidden="true"
+        >
+
+            <div class="orb"></div>
+
+            <div class="emblem-center">
+
+                <div>
+
+                    <b>
+                        <img
+                            src="LOGO.png"
+                            width="100"
+                            height="100"
+                            alt="Active Forum Logo"
+                        >
+                    </b>
+
+                    <small>
+                        2026–27
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    
+</section>
+
+
+
+<!-- =========================
+     PROGRAM GALLERY
+========================= -->
+
+<section
+  class="section"
+  id="program"
+>
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="section-kicker">
+          Visual Archive
+        </div>
+
+        <h2>
+          Program Highlights
+        </h2>
+
+      </div>
+
+
+      <p class="section-intro">
+
+        A curated visual direction inspired by the
+        previous YMIT FEST reports: inauguration,
+        poster presentation, student participation,
+        expert interaction, speaking activities
+        and the valedictory celebration.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="gallery">
+
+
+      <!-- IMAGE 01 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-01.jpg"
+            alt="Previous YMIT Fest event session"
+          >
+
+          <span class="card-label">
+            Legacy • 2023
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Knowledge in Action
+          </h3>
+
+          <p>
+            Students and faculty coming together
+            around a shared culture of learning,
+            presentation and technology.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 02 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-02.jpg"
+            alt="Previous YMIT Fest interaction"
+          >
+
+          <span class="card-label">
+            Interaction • 2023
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Ideas &amp; Interaction
+          </h3>
+
+          <p>
+            Interactive sessions encourage students
+            to explain ideas confidently and learn
+            through discussion.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 03 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-03.jpg"
+            alt="YMIT Fest group session"
+          >
+
+          <span class="card-label">
+            Community • 2024
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Inaugural Spirit
+          </h3>
+
+          <p>
+            A formal beginning that connects
+            organizers, guests and participants
+            with the purpose of the program.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 04 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-04.jpg"
+            alt="YMIT Fest presentation gathering"
+          >
+
+          <span class="card-label">
+            Showcase • 2024
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Technology Showcase
+          </h3>
+
+          <p>
+            Students engage with displays and
+            emerging ideas in an energetic,
+            knowledge-driven environment.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 05 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-05.jpg"
+            alt="YMIT Fest felicitation ceremony"
+          >
+
+          <span class="card-label">
+            Recognition • 2024
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Recognition &amp; Excellence
+          </h3>
+
+          <p>
+            Felicitation moments celebrate effort,
+            achievement and the people who make
+            the program possible.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 06 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-06.jpg"
+            alt="YMIT Fest 2026 address to students"
+          >
+
+          <span class="card-label">
+            Address • 2026
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Leadership Address
+          </h3>
+
+          <p>
+            Guidance from college leadership
+            connects student participation with
+            the changing world of technology.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 07 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-07.jpg"
+            alt="YMIT Fest 2026 poster presentation"
+          >
+
+          <span class="card-label">
+            Posters • 2026
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Poster Presentation
+          </h3>
+
+          <p>
+            Research, creativity and visual
+            communication come together as
+            students present technology-focused ideas.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 08 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-08.jpg"
+            alt="YMIT Fest 2026 poster evaluation"
+          >
+
+          <span class="card-label">
+            Evaluation • 2026
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Ideas Under Review
+          </h3>
+
+          <p>
+            Participants explain their work while
+            examiners evaluate research depth,
+            creativity and presentation skills.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 09 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-09.jpg"
+            alt="YMIT Fest 2026 extempore speaker"
+          >
+
+          <span class="card-label">
+            Extempore • 2026
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Speak. Think. Lead.
+          </h3>
+
+          <p>
+            Extempore activities develop spontaneous
+            thinking, articulation, confidence
+            and communication.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 10 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-10.jpg"
+            alt="YMIT Fest 2026 student presentation"
+          >
+
+          <span class="card-label">
+            Presentation • 2026
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Future-Focused Voices
+          </h3>
+
+          <p>
+            Students explore computer science,
+            IT and technology-driven possibilities
+            through public speaking.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 11 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-13.jpg"
+            alt="YMIT Fest 2026 invited talk"
+          >
+
+          <span class="card-label">
+            Talk • 2026
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Entrepreneurial Thinking
+          </h3>
+
+          <p>
+            Expert interaction turns innovative
+            ideas into practical thinking,
+            problem-solving and initiative.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- IMAGE 12 -->
+
+      <article class="card">
+
+        <div class="card-img">
+
+          <img
+            src="program-12.jpg"
+            alt="YMIT Fest 2026 valedictory winners"
+          >
+
+          <span class="card-label">
+            Valedictory • 2026
+          </span>
+
+        </div>
+
+        <div class="card-body">
+
+          <h3>
+            Celebrate Achievement
+          </h3>
+
+          <p>
+            The closing celebration recognizes
+            winners, participants, organizers
+            and the collective success of the event.
+          </p>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+
+    <!-- FOUR FEATURE BOXES -->
+
+    <div class="feature">
+
+      <div class="feature-item">
+
+        <strong>
+          Innovation
+        </strong>
+
+        <span>
+          Emerging technology and
+          research-oriented thinking.
+        </span>
+
+      </div>
+
+
+      <div class="feature-item">
+
+        <strong>
+          Communication
+        </strong>
+
+        <span>
+          Presentation, extempore and
+          confident expression.
+        </span>
+
+      </div>
+
+
+      <div class="feature-item">
+
+        <strong>
+          Creativity
+        </strong>
+
+        <span>
+          Original ideas presented through
+          visual and technical work.
+        </span>
+
+      </div>
+
+
+      <div class="feature-item">
+
+        <strong>
+          Leadership
+        </strong>
+
+        <span>
+          Student participation, teamwork
+          and responsible initiative.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     VIDEO
+========================= -->
+
+<section
+  class="section"
+  id="video"
+>
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="section-kicker">
+          Media Centre
+        </div>
+
+        <h2>
+          Official Program Video
+        </h2>
+
+      </div>
+
+
+      <p class="section-intro">
+
+        
+
+      </p>
+
+    </div>
+
+
+
+    <div class="video-wrap">
+
+      <div class="video-placeholder">
+
+        <div>
+
+          <div class="play">
+            <img src="LOGO.png"width="50"length="50">
+          </div>
+
+          <h3>
+            ACTIVE FORUM 2026–27
+          </h3>
+
+          <p>
+          </p>
+
+          <div class="video-code">
+              <Video controls playsinline width="100%">
+                <source src="YMIT FEST2026_EventVideo.mp4" types="video/mp4">
+              </Video>
+              Active-forum-2025-2026
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!--
+      WHEN YOU HAVE YOUR VIDEO,
+      DELETE THE PLACEHOLDER ABOVE
+      AND UNCOMMENT THIS:
+
+      <video
+        controls
+        playsinline
+        poster="assets/program-12.jpg"
+        style="
+          width:100%;
+          border-radius:19px;
+          display:block;
+        "
+      >
+
+        <source
+          src="assets/active-forum-2026-27.mp4"
+          type="video/mp4"
+        >
+
+        Your browser does not support HTML5 video.
+
+      </video>
+
+      -->
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     THEME
+========================= -->
+
+<section
+  class="section"
+  id="theme"
+>
+
+  <div class="container">
+
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="section-kicker">
+          Program Direction
+        </div>
+
+        <h2>
+          Technology • Innovation • Future
+        </h2>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="split">
+
+
+      <!-- LEFT -->
+
+      <div class="panel">
+
+        <h3>
+          ACTIVE FORUM 2026–27
+        </h3>
+
+        <p>
+
+          The visual identity takes inspiration
+          from the previous reports' recurring
+          emphasis on Computer Science,
+          Information Technology, innovation,
+          student creativity, emerging
+          technologies and communication skills.
+
+        </p>
+
+
+        <ul class="tech-list">
+
+          <li>
+            Artificial Intelligence
+          </li>
+
+          <li>
+            Cybersecurity
+          </li>
+
+          <li>
+            Blockchain
+          </li>
+
+          <li>
+            Sustainable Computing
+          </li>
+
+          <li>
+            Entrepreneurship
+          </li>
+
+          <li>
+            Digital Transformation
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <!-- RIGHT -->
+
+      <div class="panel">
+
+        <h3>
+          2026–27 Vision
+        </h3>
+
+        <p>
+
+          Create a platform where students
+          can demonstrate technical knowledge,
+          research, creativity, communication
+          and leadership — while connecting
+          classroom learning with real-world
+          technology and innovation.
+
+        </p>
+
+
+        <div
+          class="feature"
+          style="
+            margin-top:20px;
+            grid-template-columns:1fr 1fr;
+          "
+        >
+
+          <div class="feature-item">
+
+            <strong>
+              01
+            </strong>
+
+            <span>
+              Learn beyond the classroom.
+            </span>
+
+          </div>
+
+
+          <div class="feature-item">
+
+            <strong>
+              02
+            </strong>
+
+            <span>
+              Build and present ideas.
+            </span>
+
+          </div>
+
+
+          <div class="feature-item">
+
+            <strong>
+              03
+            </strong>
+
+            <span>
+              Collaborate with peers.
+            </span>
+
+          </div>
+
+
+          <div class="feature-item">
+
+            <strong>
+              04
+            </strong>
+
+            <span>
+              Lead with confidence.
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+ 
+ <!-- =========================
+     SOURCE OF INSPIRATION
+========================= -->
+
+<section class="inspiration-section">
+
+    <div class="inspiration-card">
+
+        <div class="inspiration-label">
+            SOURCE OF INSPIRATION
+        </div>
+
+        <div class="inspiration-photo">
+    <img
+        src="pricipal.jpg"
+        alt="Principal"
+    >
+</div>
+
+        <div class="inspiration-info">
+            <h3> Dr.G.N Shinde Sir</h3>
+            <span>PRINCIPAL</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FACULTY MEMBERS
+========================= -->
+
+<section class="management-section faculty-section">
+
+    <div class="management-container">
+
+        <div class="section-heading faculty-heading">
+            <div class="section-label">FACULTY</div>
+            <h2>FACULTY MEMBERS</h2>
+            <p>
+                Faculty members guiding and supporting the Active Forum 2026–27.
+            </p>
+        </div>
+
+        <div class="faculty-grid">
+
+            <!-- FACULTY 01 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="jadhav.jpeg"
+                        alt="Jadhav Sir"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">01</div>
+
+                <div class="faculty-info">
+                    <h3>DR.S.G.Jadhav</h3>
+                    <span>HEAD OF DEPARTMENT</span>
+                </div>
+            </div>
+
+
+            <!-- FACULTY 02 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="pathak.jpg"
+                        alt="Pathak Sir"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">02</div>
+
+                <div class="faculty-info">
+                    <h3>Dr.P.B.Pathak</h3>
+                    <span>Faculty Member</span>
+                </div>
+            </div>
+
+
+            <!-- FACULTY 03 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="chounste.jpeg"
+                        alt="Chounste Sir"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">03</div>
+
+                <div class="faculty-info">
+                    <h3>Mr.G.BChounste</h3>
+                    <span>Active Forum Coordinator</span>
+                </div>
+            </div>
+
+
+            <!-- FACULTY 04 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="tamsekar.jpeg"
+                        alt="Tamsekar Sir"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">04</div>
+
+                <div class="faculty-info">
+                    <h3>Dr.P.B.Tamsekar</h3>
+                    <span>Faculty Member</span>
+                </div>
+            </div>
+
+
+            <!-- FACULTY 05 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="shinde.jpeg"
+                        alt="Shinde Mam"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">05</div>
+
+                <div class="faculty-info">
+                    <h3>Dr.S.M.Shinde</h3>
+                    <span>Faculty Member</span>
+                </div>
+            </div>
+
+
+            <!-- FACULTY 06 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="sushil.jpg"
+                        alt="Sushil Sir"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">06</div>
+
+                <div class="faculty-info">
+                    <h3>Mr.S.S.Mahendrakar</h3>
+                    <span>Faculty Member</span>
+                </div>
+            </div>
+
+
+            <!-- FACULTY 07 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="nikita.jpg"
+                        alt="Nikita Mam"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">07</div>
+
+                <div class="faculty-info">
+                    <h3>Miss.Nikita Bagal</h3>
+                    <span>Faculty Member</span>
+                </div>
+            </div>
+
+
+            <!-- FACULTY 08 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="vaishali.jpg"
+                        alt="Vaishali Mam"
+                        width="70"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">08</div>
+
+                <div class="faculty-info">
+                    <h3>Miss.Vaishali Pawar</h3>
+                    <span>Faculty Member</span>
+                </div>
+            </div>
+
+           <!-- FACULTY 09 -->
+            <div class="faculty-card">
+                <div class="inspiration-photo">
+                    <img
+                        src="durgesh.jpg"
+                        alt="Durgesh Sir"
+                        width="100"
+                        height="100"
+                    >
+                </div>
+
+                <div class="faculty-number">09</div>
+
+                <div class="faculty-info">
+                    <h3>MR.Durgesh Chavan</h3>
+                    <span>Faculty Member</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= PROGRAM TEAM ================= -->
+
+    <div class="program-team">
+
+        <div class="team-title">
+            <span>MANAGEMENT</span>
+            <h1>PROGRAM TEAM</h1>
+        </div>
+
+        <div class="team-description">
+    
+        </div>
+
+        <div class="team-grid">
+
+            <div class="team-card">
+                <div class="inspiration-photo">
+          <img
+        src="Ayush Mandhane (PRESIDENT).jpg" 
+        alt="1"width="80" length="80"
+               >
+             </div>
+                <h3>MR. AYUSH MANDHANE</h3>
+                <p>PRESIDENT</p>
+            </div>
+
+            <div class="team-card">
+                <div class="inspiration-photo">
+    <img
+        src="Bhakti Potpelwar (VICE -PRESIDENT).jpeg"
+        alt="2" width="100" length="100"
+    >
+</div>
+                <h3>BHAKTI POTPELWAR</h3>
+                <p>VICE PRESIDENT</p>
+            </div>
+
+            <div class="team-card">
+                <div class="inspiration-photo">
+    <img
+        src="Amisha Pawar (TREASURER).jpg"
+        alt="3"width="90"LENGTH="90"
+    >
+</div>
+                <h3>AMISHA PAWAR</h3>
+                <p>TREASURER</p>
+            </div>
+
+            <div class="team-card">
+                <div class="inspiration-photo">
+    <img
+        src="Sanjivani Mokale (SECRETARY).jpeg"
+        alt="4"width="100" legth="100"
+    >
+</div>
+                <h3>SANJEVNI MOKALE </h3>
+                <p>STUDENT SECRETARY</p>
+            </div>
+
+            <div class="team-card">
+                <div class="inspiration-photo">
+    <img
+        src="Rajveer2.jpg"
+        alt="4"width="70" height="100"
+    >
+</div>
+                <h3>RAJVEER SINGH MANAN</h3>
+                <p>DEVLOPER</p>
+            </div>
+
+            <div class="team-card">
+                <div class="inspiration-photo">
+    <img
+        src="Rudra.jpg"
+        alt="5" width="70"height="100"
+        width=""length=""
+    >
+            </div>
+            <h3>RUDRE SABNE</h3>
+            <p>DEVLOPER</p>
+       </div>
+    </div>
+    </div>
+
+
+    <!-- ================= MEMBER LIST ================= -->
+
+    <div class="members-section">
+
+        <span class="members-label">OUR MEMBERS</span>
+
+        <h2>MEMBER LIST</h2>
+
+        <p class="members-description">
+            Meet the members of the Active Forum 2026–27.
+        </p>
+
+        <div class="members-list">
+
+            <div class="member">
+                <span>01</span>
+                <div>
+                    <h3>Mr.Rushi Dattatray Telange</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>02</span>
+                <div>
+                    <h3>Mr.Siddu Jadhav</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>03</span>
+                <div>
+                    <h3>Mr.Yusuf Saikh</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>04</span>
+                <div>
+                    <h3>Mr.Omkar Hadve</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>05</span>
+                <div>
+                    <h3>Miss Diksha Baghat</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>06</span>
+                <div>
+                    <h3>Miss Mayuri Wavle</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>07</span>
+                <div>
+                    <h3>Miss Amita Jamge</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>08</span>
+                <div>
+                    <h3>Miss Tanushri Vaishnav</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>09</span>
+                <div>
+                    <h3>Miss Gyatri Kailas Chavan</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>10</span>
+                <div>
+                    <h3>Miss Shardha Londhe</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>11</span>
+                <div>
+                    <h3>Miss Samiksha Jarande</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>12</span>
+                <div>
+                    <h3>Miss Pranjal Pawde</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>13</span>
+                <div>
+                    <h3>Miss Sandhaya Londhe </h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>14</span>
+                <div>
+                    <h3>Miss Sakshi Kamble</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>15</span>
+                <div>
+                    <h3>Miss Namarata Mungal</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+            <div class="member">
+                <span>16</span>
+                <div>
+                    <h3>Mr.Rudra Sabne</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+            <div class="member">
+                <span>17</span>
+                <div>
+                    <h3>Mr.Rajveer Singh Manan</h3>
+                    <p>MEMBER</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-title">
+
+      ACTIVE FORUM 2026–27
+
+    </div>
+
+    <p>
+
+      Shri Sharda Bhavan Education Society’s
+      Yeshwant Mahavidyalaya, Nanded
+
+      • Department of Computer Science &amp; IT
+
+    </p>
+
+    <p style="margin-top:16px;">
+
+      Designed by Rudra sabne & Rajveer Singh Manan  BCS FY.
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =========================
+     LIVE CLOCK
+========================= -->
+
+<div
+  class="clock"
+  aria-label="Current India date and time"
+>
+
+  <div
+    class="time"
+    id="clockTime"
+  >
+    00:00:00
+  </div>
+
+
+  <div
+    class="date"
+    id="clockDate"
+  >
+    Loading date…
+  </div>
+
+
+  <div class="zone">
+
+    INDIA • IST
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+  /*
+    LIVE INDIA CLOCK
+
+    This automatically shows:
+    - Current time
+    - Current date
+    - India Standard Time
+  */
+
+  function updateClock() {
+
+    const now = new Date();
+
+
+    const time = new Intl.DateTimeFormat(
+      'en-IN',
+      {
+        timeZone: 'Asia/Kolkata',
+
+        hour: '2-digit',
+
+        minute: '2-digit',
+
+        second: '2-digit',
+
+        hour12: true
+      }
+    ).format(now);
+
+
+    const date = new Intl.DateTimeFormat(
+      'en-IN',
+      {
+        timeZone: 'Asia/Kolkata',
+
+        weekday: 'short',
+
+        day: '2-digit',
+
+        month: 'short',
+
+        year: 'numeric'
+      }
+    ).format(now);
+
+
+    document.getElementById(
+      'clockTime'
+    ).textContent = time;
+
+
+    document.getElementById(
+      'clockDate'
+    ).textContent = date;
+
+  }
+
+
+  updateClock();
+
+
+  /*
+    Update clock every second
+  */
+
+  setInterval(
+    updateClock,
+    1000
+  );
+
+</script>
+
+
+</body>
+</html>
